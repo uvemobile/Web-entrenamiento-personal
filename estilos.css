@@ -1,0 +1,78 @@
+/* con (asterisco *) haces lo que definas a todo el documento*/
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* con punto .XXX haces lo que definas a una class*/
+.cabecera{
+    background-color:rgb(143, 143, 143);
+    padding: 2em;
+    text-align: center;
+}
+.piedepagina{
+    background-color: silver;
+    padding: 1em;
+    text-align: center;
+}
+/* con almohadilla # haces lo que definas a id */
+#quien-soy{
+    font-style: oblique;
+    color:rgb(23, 73, 119);
+    font-size: 2em;
+}
+/* con [corchetes] haces lo que definas a un atributo que asignemos nosotros*/
+[tipos="entrenos"]{
+    color: rgb(23, 73, 119);;
+}
+/* haces lo que definas a las "b" que estén dentro de las "p" , en este caso*/
+p b {
+    color: hotpink;
+}
+/* Hacemos que al pasar el mouse por encima el elemento haga... en este caso cambiar de color*/
+h2:hover{
+    color: rgb(6, 49, 92);
+}
+/* Display para definir si esta en block como en defecto o cambiamos a inline (solo ocupa lo que su contenido) */
+/* postition relative y absolute para que el espacio que ocupan esas cajas permanezca aunque las movamos o que las demás ocupen su lugar en el flujo de datos*/
+aside{
+    display: inline-block;
+    background-color:silver;
+}
+article{
+    position: relative;
+    margin-left: 21em;
+}
+div h2{
+    text-align: center;
+}
+/*icono en el nav*/
+.ico-nav{
+    width: 3em;
+    height: 3em;
+}
+/*esa caja se queda fija al hacer scroll*/
+aside{
+    position: fixed;
+}
+/*Pseudo elementos = si tenemos una clase llamada de una manera al poner ese otro comando solo actua sobre esa parte, en este caso no hay clase raiz pero tambien funciona*/         /* ejemplos ::first-line  ::placeholder  ::selection  ::after  ::before*/
+.primeralinea::first-letter{
+    color: blue;
+    font-size: 2em;
+}
+/*pseudoclases*/
+.caja1{
+    height: 100px;
+    width: 100px;
+    background: lightskyblue;
+    transition-duration: 2s;
+}
+
+.caja1:hover{
+background: steelblue;
+height: 150px;
+width: 150px;
+}
+li{
+    font-size: medium;
+    padding-bottom: 2em;
+}
